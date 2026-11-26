@@ -1,0 +1,347 @@
+
+[
+  {
+    "id": 1,
+    "category": "direct_positive",
+    "company": "Apple",
+    "answer": "Apple has consistently delivered excellent smartphones. Its camera quality, software integration, and overall user experience are impressive.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Apple has consistently delivered excellent smartphones.",
+      "Its camera quality, software integration, and overall user experience are impressive."
+    ]
+  },
+  {
+    "id": 2,
+    "category": "direct_positive",
+    "company": "Tesla",
+    "answer": "Tesla has made impressive progress in electric vehicle technology. Its charging network and software updates provide a convenient ownership experience.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Tesla has made impressive progress in electric vehicle technology.",
+      "Its charging network and software updates provide a convenient ownership experience."
+    ]
+  },
+  {
+    "id": 3,
+    "category": "direct_positive",
+    "company": "Microsoft",
+    "answer": "Microsoft offers a powerful cloud computing platform. Its Azure services are reliable and provide a wide range of enterprise features.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Microsoft offers a powerful cloud computing platform.",
+      "Its Azure services are reliable and provide a wide range of enterprise features."
+    ]
+  },
+  {
+    "id": 4,
+    "category": "direct_positive",
+    "company": "Amazon",
+    "answer": "Amazon provides an excellent online shopping experience. Its delivery network is efficient, and its product selection is extensive.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Amazon provides an excellent online shopping experience.",
+      "Its delivery network is efficient, and its product selection is extensive."
+    ]
+  },
+  {
+    "id": 5,
+    "category": "direct_positive",
+    "company": "Google",
+    "answer": "Google has developed highly useful search technology. Its search engine delivers relevant results quickly and makes information easy to discover.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Google has developed highly useful search technology.",
+      "Its search engine delivers relevant results quickly and makes information easy to discover."
+    ]
+  },
+  {
+    "id": 6,
+    "category": "direct_negative",
+    "company": "Apple",
+    "answer": "Apple devices are often unnecessarily expensive. The company's repair policies can also make fixing damaged products difficult and costly.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Apple devices are often unnecessarily expensive.",
+      "The company's repair policies can also make fixing damaged products difficult and costly."
+    ]
+  },
+  {
+    "id": 7,
+    "category": "direct_negative",
+    "company": "Tesla",
+    "answer": "Tesla has faced criticism for inconsistent build quality. Some customers have also reported problems with its customer support.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Tesla has faced criticism for inconsistent build quality.",
+      "Some customers have also reported problems with its customer support."
+    ]
+  },
+  {
+    "id": 8,
+    "category": "direct_negative",
+    "company": "Microsoft",
+    "answer": "Microsoft's frequent software changes can frustrate users. Some updates have introduced bugs and disrupted existing workflows.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Microsoft's frequent software changes can frustrate users.",
+      "Some updates have introduced bugs and disrupted existing workflows."
+    ]
+  },
+  {
+    "id": 9,
+    "category": "direct_negative",
+    "company": "Amazon",
+    "answer": "Amazon has been criticized for poor working conditions in some of its facilities. Its marketplace has also faced concerns about counterfeit products.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Amazon has been criticized for poor working conditions in some of its facilities.",
+      "Its marketplace has also faced concerns about counterfeit products."
+    ]
+  },
+  {
+    "id": 10,
+    "category": "direct_negative",
+    "company": "Google",
+    "answer": "Google's privacy practices have attracted criticism. Its extensive data collection raises concerns about how users' personal information is handled.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Google's privacy practices have attracted criticism.",
+      "Its extensive data collection raises concerns about how users' personal information is handled."
+    ]
+  },
+  {
+    "id": 11,
+    "category": "competitor_comparison",
+    "company": "Apple",
+    "answer": "Samsung offers better battery life and value for money than Apple. However, Apple has a more polished operating system.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Samsung offers better battery life and value for money than Apple.",
+      "However, Apple has a more polished operating system."
+    ]
+  },
+  {
+    "id": 12,
+    "category": "competitor_comparison",
+    "company": "Samsung",
+    "answer": "Samsung provides more affordable smartphones than Apple. However, Apple's software ecosystem is more polished.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Samsung provides more affordable smartphones than Apple.",
+      "However, Apple's software ecosystem is more polished."
+    ]
+  },
+  {
+    "id": 13,
+    "category": "competitor_comparison",
+    "company": "Microsoft",
+    "answer": "Google Workspace is easier to use for simple collaboration, whereas Microsoft 365 provides more advanced enterprise features and integration options.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Google Workspace is easier to use for simple collaboration, whereas Microsoft 365 provides more advanced enterprise features and integration options."
+    ]
+  },
+  {
+    "id": 14,
+    "category": "competitor_comparison",
+    "company": "Netflix",
+    "answer": "Disney+ offers better value for families because of its content library. Netflix, however, has a wider variety of original international shows.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Disney+ offers better value for families because of its content library.",
+      "Netflix, however, has a wider variety of original international shows."
+    ]
+  },
+  {
+    "id": 15,
+    "category": "competitor_comparison",
+    "company": "Coca-Cola",
+    "answer": "Pepsi has a sweeter flavour, while Coca-Cola has a more distinctive taste. Both brands have strong market recognition.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Pepsi has a sweeter flavour, while Coca-Cola has a more distinctive taste.",
+      "Both brands have strong market recognition."
+    ]
+  },
+  {
+    "id": 16,
+    "category": "mixed",
+    "company": "Apple",
+    "answer": "Apple produces premium devices with excellent performance. However, its products are expensive, and some users find its ecosystem restrictive.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Apple produces premium devices with excellent performance.",
+      "However, its products are expensive, and some users find its ecosystem restrictive."
+    ]
+  },
+  {
+    "id": 17,
+    "category": "mixed",
+    "company": "Tesla",
+    "answer": "Tesla offers innovative electric vehicles with impressive acceleration. However, concerns about build quality and after-sales service affect the ownership experience.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Tesla offers innovative electric vehicles with impressive acceleration.",
+      "However, concerns about build quality and after-sales service affect the ownership experience."
+    ]
+  },
+  {
+    "id": 18,
+    "category": "mixed",
+    "company": "Microsoft",
+    "answer": "Microsoft provides a comprehensive software ecosystem for businesses. However, its licensing structure can be complicated, and some products have a steep learning curve.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Microsoft provides a comprehensive software ecosystem for businesses.",
+      "However, its licensing structure can be complicated, and some products have a steep learning curve."
+    ]
+  },
+  {
+    "id": 19,
+    "category": "mixed",
+    "company": "Amazon",
+    "answer": "Amazon offers fast delivery and a large selection of products. On the other hand, concerns about packaging waste and marketplace product quality remain.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Amazon offers fast delivery and a large selection of products.",
+      "On the other hand, concerns about packaging waste and marketplace product quality remain."
+    ]
+  },
+  {
+    "id": 20,
+    "category": "mixed",
+    "company": "Google",
+    "answer": "Google provides convenient services and useful productivity tools. At the same time, its data collection practices raise privacy concerns.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Google provides convenient services and useful productivity tools.",
+      "At the same time, its data collection practices raise privacy concerns."
+    ]
+  },
+  {
+    "id": 21,
+    "category": "neutral_factual",
+    "company": "Apple",
+    "answer": "Apple was founded in 1976. The company is headquartered in Cupertino, California, and develops consumer electronics and software.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Apple was founded in 1976.",
+      "The company is headquartered in Cupertino, California, and develops consumer electronics and software."
+    ]
+  },
+  {
+    "id": 22,
+    "category": "neutral_factual",
+    "company": "Tesla",
+    "answer": "Tesla manufactures electric vehicles and energy storage products. The company operates manufacturing facilities in multiple countries.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Tesla manufactures electric vehicles and energy storage products.",
+      "The company operates manufacturing facilities in multiple countries."
+    ]
+  },
+  {
+    "id": 23,
+    "category": "neutral_factual",
+    "company": "Microsoft",
+    "answer": "Microsoft develops operating systems, productivity software, and cloud services. Its product portfolio includes Windows, Microsoft 365, and Azure.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Microsoft develops operating systems, productivity software, and cloud services.",
+      "Its product portfolio includes Windows, Microsoft 365, and Azure."
+    ]
+  },
+  {
+    "id": 24,
+    "category": "neutral_factual",
+    "company": "Amazon",
+    "answer": "Amazon operates an e-commerce platform and provides cloud computing services through Amazon Web Services. It also has a subscription service called Prime.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Amazon operates an e-commerce platform and provides cloud computing services through Amazon Web Services.",
+      "It also has a subscription service called Prime."
+    ]
+  },
+  {
+    "id": 25,
+    "category": "neutral_factual",
+    "company": "Google",
+    "answer": "Google develops internet-related products and services. Its offerings include Search, YouTube, Android, and Google Cloud.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Google develops internet-related products and services.",
+      "Its offerings include Search, YouTube, Android, and Google Cloud."
+    ]
+  },
+  {
+    "id": 26,
+    "category": "not_mentioned",
+    "company": "Apple",
+    "answer": "The smartphone market includes several manufacturers offering devices across different price segments. Consumers often compare camera quality, battery life, and performance before purchasing.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": []
+  },
+  {
+    "id": 27,
+    "category": "not_mentioned",
+    "company": "Tesla",
+    "answer": "Electric vehicles use rechargeable batteries and electric motors. Their driving range depends on battery capacity, vehicle efficiency, and driving conditions.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": []
+  },
+  {
+    "id": 28,
+    "category": "not_mentioned",
+    "company": "Microsoft",
+    "answer": "Cloud computing allows organizations to access computing resources over the internet. Common service models include infrastructure, platform, and software as a service.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": []
+  },
+  {
+    "id": 29,
+    "category": "not_mentioned",
+    "company": "Amazon",
+    "answer": "Online shopping platforms allow customers to browse products, compare prices, and place orders digitally. Delivery services then transport purchased products to customers.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": []
+  },
+  {
+    "id": 30,
+    "category": "not_mentioned",
+    "company": "Google",
+    "answer": "Search engines help users find information by indexing webpages and ranking results according to relevance. Their performance depends on crawling, indexing, and retrieval systems.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": []
+  }
+]
