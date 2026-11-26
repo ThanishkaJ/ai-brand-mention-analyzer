@@ -1,0 +1,168 @@
+[
+    {
+        "id": 21,
+        "category": "competitor_comparison",
+        "company": "Apple",
+        "expected_mentioned": true,
+        "predicted_mentioned": true,
+        "mention_correct": true,
+        "expected_sentiment": "negative",
+        "predicted_sentiment": "neutral_mixed",
+        "sentiment_score": 0.5,
+        "sentiment_correct": false,
+        "inference_time_seconds": 48.368,
+        "extracted_context": [
+            "Samsung offers better battery life and value for money than Apple.",
+            "However, Apple has a more polished operating system."
+        ],
+        "extracted_opinions": [
+            {
+                "opinion": "Offers worse battery life and value for money compared to a competitor",
+                "polarity": "negative",
+                "intensity": 1
+            },
+            {
+                "opinion": "Has a more polished operating system",
+                "polarity": "positive",
+                "intensity": 1
+            }
+        ],
+        "explanation": "The text compares Apple unfavorably to Samsung regarding battery life and value for money, but evaluates Apple's operating system positively as more polished.",
+        "error": null
+    },
+    {
+        "id": 11,
+        "category": "direct_negative",
+        "company": "Apple",
+        "expected_mentioned": true,
+        "predicted_mentioned": true,
+        "mention_correct": true,
+        "expected_sentiment": "negative",
+        "predicted_sentiment": "negative",
+        "sentiment_score": null,
+        "sentiment_correct": true,
+        "inference_time_seconds": 4.684,
+        "extracted_context": [
+            "Apple devices are often unnecessarily expensive.",
+            "The company's repair policies can also make fixing damaged products difficult and costly."
+        ],
+        "extracted_opinions": [
+            {
+                "opinion": "Devices are unnecessarily expensive",
+                "polarity": "negative",
+                "intensity": 2
+            },
+            {
+                "opinion": "Repair policies make fixing damaged products difficult and costly",
+                "polarity": "negative",
+                "intensity": 2
+            }
+        ],
+        "explanation": "Apple is criticized for having unnecessarily expensive devices as well as repair policies that make fixing damaged products difficult and costly, resulting in strong negative opinions.",
+        "error": null
+    },
+    {
+        "id": 1,
+        "category": "direct_positive",
+        "company": "Apple",
+        "expected_mentioned": true,
+        "predicted_mentioned": true,
+        "mention_correct": true,
+        "expected_sentiment": "positive",
+        "predicted_sentiment": "positive",
+        "sentiment_score": null,
+        "sentiment_correct": true,
+        "inference_time_seconds": 6.156,
+        "extracted_context": [
+            "Apple has consistently delivered excellent smartphones.",
+            "Its camera quality, software integration, and overall user experience are impressive."
+        ],
+        "extracted_opinions": [
+            {
+                "opinion": "Apple has consistently delivered excellent smartphones.",
+                "polarity": "positive",
+                "intensity": 2
+            },
+            {
+                "opinion": "Its camera quality, software integration, and overall user experience are impressive.",
+                "polarity": "positive",
+                "intensity": 2
+            }
+        ],
+        "explanation": "Apple is explicitly mentioned and receives strong praise for its smartphones, camera quality, software integration, and overall user experience.",
+        "error": null
+    },
+    {
+        "id": 31,
+        "category": "mixed",
+        "company": "Apple",
+        "expected_mentioned": true,
+        "predicted_mentioned": true,
+        "mention_correct": true,
+        "expected_sentiment": "neutral_mixed",
+        "predicted_sentiment": "neutral_mixed",
+        "sentiment_score": 0.5,
+        "sentiment_correct": true,
+        "inference_time_seconds": 3.533,
+        "extracted_context": [
+            "Apple produces premium devices with excellent performance.",
+            "However, its products are expensive, and some users find its ecosystem restrictive."
+        ],
+        "extracted_opinions": [
+            {
+                "opinion": "Produces premium devices with excellent performance",
+                "polarity": "positive",
+                "intensity": 2
+            },
+            {
+                "opinion": "Products are expensive",
+                "polarity": "negative",
+                "intensity": 1
+            },
+            {
+                "opinion": "Ecosystem is restrictive",
+                "polarity": "negative",
+                "intensity": 1
+            }
+        ],
+        "explanation": "Apple is mentioned with both positive and negative evaluations. It is praised for producing premium devices with excellent performance using strong phrasing, while criticized for having expensive products and a restrictive ecosystem with moderate intensity.",
+        "error": null
+    },
+    {
+        "id": 41,
+        "category": "neutral_factual",
+        "company": "Apple",
+        "expected_mentioned": true,
+        "predicted_mentioned": true,
+        "mention_correct": true,
+        "expected_sentiment": "neutral",
+        "predicted_sentiment": "neutral",
+        "sentiment_score": null,
+        "sentiment_correct": true,
+        "inference_time_seconds": 2.178,
+        "extracted_context": [
+            "Apple was founded in 1976.",
+            "The company is headquartered in Cupertino, California, and develops consumer electronics and software."
+        ],
+        "extracted_opinions": [],
+        "explanation": "Apple is mentioned in the text with purely factual information about its founding year, headquarters, and business activities, but no evaluative opinions are expressed.",
+        "error": null
+    },
+    {
+        "id": 51,
+        "category": "not_mentioned",
+        "company": "Apple",
+        "expected_mentioned": false,
+        "predicted_mentioned": false,
+        "mention_correct": true,
+        "expected_sentiment": "not_applicable",
+        "predicted_sentiment": "not_applicable",
+        "sentiment_score": null,
+        "sentiment_correct": true,
+        "inference_time_seconds": 2.05,
+        "extracted_context": [],
+        "extracted_opinions": [],
+        "explanation": "Apple is not mentioned in the text.",
+        "error": null
+    }
+]
