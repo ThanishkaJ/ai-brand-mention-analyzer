@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Context Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand-logo">
+                <div class="logo-icon">B</div>
+                <div>
+                    <h2>BrandScope</h2>
+                    <span>AI Intelligence</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="sidebar-label">WORKSPACE</p>
+
+                <button class="nav-item active" id="newAnalysisNav">
+                    <span>＋</span>
+                    New Analysis
+                </button>
+
+                <button class="nav-item" id="historyNav">
+                    <span>◷</span>
+                    Analysis History
+                </button>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-info">
+                    <span class="status-dot"></span>
+                    <div>
+                        <p>System Status</p>
+                        <small>Backend connected</small>
+                    </div>
+                </div>
+                <p class="sidebar-version">BrandScope v1.0</p>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Header -->
+            <header class="top-header">
+                <div>
+                    <p class="breadcrumb">Workspace / <span id="currentPage">New Analysis</span></p>
+                    <h1 id="pageTitle">Brand Analysis</h1>
+                </div>
+
+                <div class="header-right">
+                    <span class="ai-status">✦ AI Powered</span>
+                </div>
+            </header>
+
+
+            <!-- New Analysis Section -->
+            <section id="analysisSection">
+
+                <div class="welcome-section">
+                    <h2>Understand how AI talks about your brand.</h2>
+                    <p>Analyze AI-generated responses to discover brand mentions, opinions, context and sentiment.</p>
+                </div>
+
+                <div class="analysis-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Analyze a Brand</h3>
+                            <p>Enter a brand and the AI-generated response you want to evaluate.</p>
+                        </div>
+                        <span class="card-icon">✦</span>
+                    </div>
+
+                    <form id="analysisForm">
+
+                        <div class="form-group">
+                            <label for="companyInput">Brand / Company Name</label>
+                            <input
+                                type="text"
+                                id="companyInput"
+                                placeholder="e.g. Apple, Samsung, Google..."
+                                maxlength="100"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label-row">
+                                <label for="answerInput">AI-Generated Response</label>
+                                <span>Paste the complete response</span>
+                            </div>
+
+                            <textarea
+                                id="answerInput"
+                                placeholder="Paste an AI-generated answer here..."
+                                maxlength="20000"
+                                required
+                            ></textarea>
+
+                            <div class="textarea-footer">
+                                <span id="characterCount">0 / 20000 characters</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="secondary-button">Clear</button>
+                            <button type="submit" class="primary-button" id="analyzeButton">
+                                <span>✦</span> Analyze Brand
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Analysis Results -->
+                <section id="resultsSection" class="results-section hidden">
+
+                    <div class="results-heading">
+                        <div>
+                            <p class="section-eyebrow">ANALYSIS OUTPUT</p>
+                            <h2>Analysis Results</h2>
+                        </div>
+                        <span id="resultCompany" class="company-tag"></span>
+                    </div>
+
+                    <div id="sentimentCard" class="sentiment-card">
+                        <div>
+                            <p class="result-label">OVERALL SENTIMENT</p>
+                            <h2 id="sentimentValue">Positive</h2>
+                            <p id="sentimentDescription"></p>
+                        </div>
+                        <div class="sentiment-score">
+                            <span>Score</span>
+                            <strong id="scoreValue">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="result-grid">
+
+                        <div class="result-panel">
+                            <h3>Brand Mention</h3>
+                            <p id="mentionValue"></p>
+                        </div>
+
+                        <div class="result-panel">
+                            <h3>AI Explanation</h3>
+                            <p id="explanationValue"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="result-panel">
+                        <h3>Relevant Context</h3>
+                        <div id="contextList"></div>
+                    </div>
+
+                    <div class="result-panel">
+                        <h3>Extracted Opinions</h3>
+                        <div id="opinionsList"></div>
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- History Section -->
+            <section id="historySection" class="hidden">
+
+                <div class="welcome-section">
+                    <h2>Your Analysis History</h2>
+                    <p>Review and manage your previously analyzed brands.</p>
+                </div>
+
+                <div class="history-card">
+                    <div class="card-heading">
+                        <div>
+                            <h3>Previous Analyses</h3>
+                            <p>Your saved analysis records.</p>
+                        </div>
+
+                        <button id="refreshHistory" class="secondary-button">
+                            ↻ Refresh
+                        </button>
+                    </div>
+
+                    <div id="historyList">
+                        <p class="empty-message">Loading history...</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Notification -->
+            <div id="toast" class="toast hidden"></div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
