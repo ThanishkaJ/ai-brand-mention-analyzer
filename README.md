@@ -25,7 +25,6 @@ It uses Google's Gemini API for contextual brand detection and opinion extractio
 | Data Validation | Pydantic |
 | Database | SQLite |
 | ORM | SQLAlchemy |
-| Testing | pytest |
 
 ## System Architecture
 
