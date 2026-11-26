@@ -1,4 +1,3 @@
-
 [
   {
     "id": 1,
@@ -10,6 +9,28 @@
     "expected_context": [
       "Apple has consistently delivered excellent smartphones.",
       "Its camera quality, software integration, and overall user experience are impressive."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Apple delivers excellent smartphones.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Apple has impressive camera quality.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Apple has strong software integration.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Apple provides an impressive user experience.",
+        "polarity": "positive",
+        "intensity": 2
+      }
     ]
   },
   {
@@ -22,6 +43,23 @@
     "expected_context": [
       "Tesla has made impressive progress in electric vehicle technology.",
       "Its charging network and software updates provide a convenient ownership experience."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Tesla has made impressive progress in electric vehicle technology.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Tesla's charging network makes ownership convenient.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Tesla's software updates improve the ownership experience.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
@@ -34,6 +72,23 @@
     "expected_context": [
       "Microsoft offers a powerful cloud computing platform.",
       "Its Azure services are reliable and provide a wide range of enterprise features."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Microsoft offers a powerful cloud computing platform.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Microsoft Azure services are reliable.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Microsoft Azure provides a wide range of enterprise features.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
@@ -46,6 +101,23 @@
     "expected_context": [
       "Amazon provides an excellent online shopping experience.",
       "Its delivery network is efficient, and its product selection is extensive."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Amazon provides an excellent online shopping experience.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Amazon's delivery network is efficient.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Amazon has an extensive product selection.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
@@ -58,10 +130,162 @@
     "expected_context": [
       "Google has developed highly useful search technology.",
       "Its search engine delivers relevant results quickly and makes information easy to discover."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Google has developed highly useful search technology.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Google Search delivers relevant results quickly.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Google makes information easy to discover.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
     "id": 6,
+    "category": "direct_positive",
+    "company": "Samsung",
+    "answer": "Samsung produces vibrant smartphone displays. Its devices offer versatile camera systems and a broad range of models for different budgets.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Samsung produces vibrant smartphone displays.",
+      "Its devices offer versatile camera systems and a broad range of models for different budgets."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Samsung produces vibrant smartphone displays.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Samsung devices offer versatile camera systems.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Samsung offers models for different budgets.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "direct_positive",
+    "company": "Netflix",
+    "answer": "Netflix offers a diverse catalogue of films and series. Its recommendation system makes it easy to discover content that matches individual interests.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Netflix offers a diverse catalogue of films and series.",
+      "Its recommendation system makes it easy to discover content that matches individual interests."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Netflix offers a diverse catalogue of films and series.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Netflix's recommendation system helps users discover relevant content.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "direct_positive",
+    "company": "Adobe",
+    "answer": "Adobe provides a comprehensive set of creative tools. Its applications offer powerful editing capabilities and work well together across creative workflows.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Adobe provides a comprehensive set of creative tools.",
+      "Its applications offer powerful editing capabilities and work well together across creative workflows."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Adobe provides a comprehensive set of creative tools.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Adobe applications offer powerful editing capabilities.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Adobe applications integrate well across creative workflows.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "direct_positive",
+    "company": "Toyota",
+    "answer": "Toyota vehicles are known for dependable performance. The company also offers a wide service network that makes routine maintenance convenient.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Toyota vehicles are known for dependable performance.",
+      "The company also offers a wide service network that makes routine maintenance convenient."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Toyota vehicles provide dependable performance.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Toyota's service network makes routine maintenance convenient.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "direct_positive",
+    "company": "Spotify",
+    "answer": "Spotify makes music discovery straightforward. Its personalized playlists and cross-device availability create a convenient listening experience.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Spotify makes music discovery straightforward.",
+      "Its personalized playlists and cross-device availability create a convenient listening experience."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Spotify makes music discovery straightforward.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Spotify provides useful personalized playlists.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Spotify offers convenient cross-device availability.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
     "category": "direct_negative",
     "company": "Apple",
     "answer": "Apple devices are often unnecessarily expensive. The company's repair policies can also make fixing damaged products difficult and costly.",
@@ -70,10 +294,27 @@
     "expected_context": [
       "Apple devices are often unnecessarily expensive.",
       "The company's repair policies can also make fixing damaged products difficult and costly."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Apple devices are unnecessarily expensive.",
+        "polarity": "negative",
+        "intensity": 2
+      },
+      {
+        "opinion": "Apple's repair policies make repairs difficult.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Apple's repair policies make repairs costly.",
+        "polarity": "negative",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 7,
+    "id": 12,
     "category": "direct_negative",
     "company": "Tesla",
     "answer": "Tesla has faced criticism for inconsistent build quality. Some customers have also reported problems with its customer support.",
@@ -82,10 +323,22 @@
     "expected_context": [
       "Tesla has faced criticism for inconsistent build quality.",
       "Some customers have also reported problems with its customer support."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Tesla has inconsistent build quality.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Tesla's customer support has problems.",
+        "polarity": "negative",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 8,
+    "id": 13,
     "category": "direct_negative",
     "company": "Microsoft",
     "answer": "Microsoft's frequent software changes can frustrate users. Some updates have introduced bugs and disrupted existing workflows.",
@@ -94,10 +347,27 @@
     "expected_context": [
       "Microsoft's frequent software changes can frustrate users.",
       "Some updates have introduced bugs and disrupted existing workflows."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Microsoft's frequent software changes frustrate users.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Microsoft updates have introduced bugs.",
+        "polarity": "negative",
+        "intensity": 2
+      },
+      {
+        "opinion": "Microsoft updates have disrupted workflows.",
+        "polarity": "negative",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 9,
+    "id": 14,
     "category": "direct_negative",
     "company": "Amazon",
     "answer": "Amazon has been criticized for poor working conditions in some of its facilities. Its marketplace has also faced concerns about counterfeit products.",
@@ -106,10 +376,22 @@
     "expected_context": [
       "Amazon has been criticized for poor working conditions in some of its facilities.",
       "Its marketplace has also faced concerns about counterfeit products."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Some Amazon facilities have poor working conditions.",
+        "polarity": "negative",
+        "intensity": 2
+      },
+      {
+        "opinion": "Amazon's marketplace has concerns about counterfeit products.",
+        "polarity": "negative",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 10,
+    "id": 15,
     "category": "direct_negative",
     "company": "Google",
     "answer": "Google's privacy practices have attracted criticism. Its extensive data collection raises concerns about how users' personal information is handled.",
@@ -118,10 +400,142 @@
     "expected_context": [
       "Google's privacy practices have attracted criticism.",
       "Its extensive data collection raises concerns about how users' personal information is handled."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Google's privacy practices have attracted criticism.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Google's extensive data collection raises privacy concerns.",
+        "polarity": "negative",
+        "intensity": 2
+      }
     ]
   },
   {
-    "id": 11,
+    "id": 16,
+    "category": "direct_negative",
+    "company": "Samsung",
+    "answer": "Some Samsung phone users report inconsistent software support across models. Certain devices also include pre-installed applications that users may not want.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Some Samsung phone users report inconsistent software support across models.",
+      "Certain devices also include pre-installed applications that users may not want."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Samsung provides inconsistent software support across some models.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some Samsung devices include unwanted pre-installed applications.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "direct_negative",
+    "company": "Netflix",
+    "answer": "Netflix has increased subscription prices several times. Some subscribers also find that its catalogue changes too frequently, with titles disappearing without much notice.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Netflix has increased subscription prices several times.",
+      "Some subscribers also find that its catalogue changes too frequently, with titles disappearing without much notice."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Netflix has increased subscription prices several times.",
+        "polarity": "negative",
+        "intensity": 2
+      },
+      {
+        "opinion": "Netflix's catalogue changes frequently and titles disappear.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "direct_negative",
+    "company": "Adobe",
+    "answer": "Adobe's subscription plans can be expensive for occasional users. Some customers also find its cancellation process confusing.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Adobe's subscription plans can be expensive for occasional users.",
+      "Some customers also find its cancellation process confusing."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Adobe subscription plans can be expensive for occasional users.",
+        "polarity": "negative",
+        "intensity": 2
+      },
+      {
+        "opinion": "Adobe's cancellation process is confusing.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "direct_negative",
+    "company": "Toyota",
+    "answer": "Some Toyota models offer dated infotainment interfaces. Their base trims can also omit features that are standard in similarly priced vehicles.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Some Toyota models offer dated infotainment interfaces.",
+      "Their base trims can also omit features that are standard in similarly priced vehicles."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Some Toyota models have dated infotainment interfaces.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some Toyota base trims omit features offered by similarly priced vehicles.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "direct_negative",
+    "company": "Spotify",
+    "answer": "Spotify's free tier includes frequent advertisements. Its audio quality options may also disappoint listeners who expect lossless streaming.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Spotify's free tier includes frequent advertisements.",
+      "Its audio quality options may also disappoint listeners who expect lossless streaming."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Spotify's free tier includes frequent advertisements.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Spotify's audio quality options may disappoint listeners seeking lossless streaming.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
     "category": "competitor_comparison",
     "company": "Apple",
     "answer": "Samsung offers better battery life and value for money than Apple. However, Apple has a more polished operating system.",
@@ -130,22 +544,48 @@
     "expected_context": [
       "Samsung offers better battery life and value for money than Apple.",
       "However, Apple has a more polished operating system."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Apple offers weaker battery life than Samsung.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Apple offers less value for money than Samsung.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Apple has a more polished operating system.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 1,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.3333
   },
   {
-    "id": 12,
+    "id": 22,
     "category": "competitor_comparison",
     "company": "Samsung",
     "answer": "Samsung provides more affordable smartphones than Apple. However, Apple's software ecosystem is more polished.",
     "expected_mentioned": true,
     "expected_sentiment": "positive",
     "expected_context": [
-      "Samsung provides more affordable smartphones than Apple.",
-      "However, Apple's software ecosystem is more polished."
+      "Samsung provides more affordable smartphones than Apple."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Samsung provides more affordable smartphones than Apple.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 13,
+    "id": 23,
     "category": "competitor_comparison",
     "company": "Microsoft",
     "answer": "Google Workspace is easier to use for simple collaboration, whereas Microsoft 365 provides more advanced enterprise features and integration options.",
@@ -153,94 +593,489 @@
     "expected_sentiment": "positive",
     "expected_context": [
       "Google Workspace is easier to use for simple collaboration, whereas Microsoft 365 provides more advanced enterprise features and integration options."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Microsoft 365 provides more advanced enterprise features.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Microsoft 365 provides extensive integration options.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 14,
+    "id": 24,
     "category": "competitor_comparison",
     "company": "Netflix",
     "answer": "Disney+ offers better value for families because of its content library. Netflix, however, has a wider variety of original international shows.",
     "expected_mentioned": true,
     "expected_sentiment": "positive",
     "expected_context": [
-      "Disney+ offers better value for families because of its content library.",
       "Netflix, however, has a wider variety of original international shows."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Netflix has a wider variety of original international shows.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 15,
+    "id": 25,
     "category": "competitor_comparison",
     "company": "Coca-Cola",
     "answer": "Pepsi has a sweeter flavour, while Coca-Cola has a more distinctive taste. Both brands have strong market recognition.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "positive",
     "expected_context": [
       "Pepsi has a sweeter flavour, while Coca-Cola has a more distinctive taste.",
       "Both brands have strong market recognition."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Coca-Cola has a more distinctive taste than Pepsi.",
+        "polarity": "positive",
+        "intensity": 1
+      }
     ]
   },
   {
-    "id": 16,
+    "id": 26,
+    "category": "competitor_comparison",
+    "company": "Toyota",
+    "answer": "Honda offers sportier handling in some models, but Toyota has a stronger reputation for long-term reliability.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Toyota has a stronger reputation for long-term reliability."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Toyota has a stronger reputation for long-term reliability.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "competitor_comparison",
+    "company": "Adobe",
+    "answer": "Canva is easier for beginners to use, while Adobe provides more advanced controls for professional design work.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Adobe provides more advanced controls for professional design work."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Adobe provides more advanced controls for professional design work.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "competitor_comparison",
+    "company": "Spotify",
+    "answer": "Apple Music offers lossless audio at no extra charge, whereas Spotify has a more extensive social-sharing experience and personalized discovery features.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Spotify has a more extensive social-sharing experience and personalized discovery features."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Spotify offers an extensive social-sharing experience.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Spotify provides personalized music discovery features.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "competitor_comparison",
+    "company": "Google",
+    "answer": "Bing integrates closely with Microsoft's services, but Google Search generally provides more relevant results for a broad range of queries.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Google Search generally provides more relevant results for a broad range of queries."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Google Search provides more relevant results for a broad range of queries.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "competitor_comparison",
+    "company": "Amazon",
+    "answer": "Walmart offers convenient in-store pickup, while Amazon provides a broader online selection and fast delivery to many locations.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Amazon provides a broader online selection and fast delivery to many locations."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Amazon provides a broader online product selection.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Amazon offers fast delivery to many locations.",
+        "polarity": "positive",
+        "intensity": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
     "category": "mixed",
     "company": "Apple",
     "answer": "Apple produces premium devices with excellent performance. However, its products are expensive, and some users find its ecosystem restrictive.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "neutral_mixed",
     "expected_context": [
       "Apple produces premium devices with excellent performance.",
       "However, its products are expensive, and some users find its ecosystem restrictive."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Apple produces premium devices with excellent performance.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Apple products are expensive.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Apple's ecosystem can feel restrictive.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 2,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.5
   },
   {
-    "id": 17,
+    "id": 32,
     "category": "mixed",
     "company": "Tesla",
     "answer": "Tesla offers innovative electric vehicles with impressive acceleration. However, concerns about build quality and after-sales service affect the ownership experience.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "positive",
     "expected_context": [
       "Tesla offers innovative electric vehicles with impressive acceleration.",
       "However, concerns about build quality and after-sales service affect the ownership experience."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Tesla offers innovative electric vehicles.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Tesla vehicles have impressive acceleration.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Tesla has build quality concerns.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Tesla's after-sales service affects ownership experience.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 4,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.6667
   },
   {
-    "id": 18,
+    "id": 33,
     "category": "mixed",
     "company": "Microsoft",
     "answer": "Microsoft provides a comprehensive software ecosystem for businesses. However, its licensing structure can be complicated, and some products have a steep learning curve.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "negative",
     "expected_context": [
       "Microsoft provides a comprehensive software ecosystem for businesses.",
       "However, its licensing structure can be complicated, and some products have a steep learning curve."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Microsoft provides a comprehensive business software ecosystem.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Microsoft's licensing structure can be complicated.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some Microsoft products have a steep learning curve.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 1,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.3333
   },
   {
-    "id": 19,
+    "id": 34,
     "category": "mixed",
     "company": "Amazon",
     "answer": "Amazon offers fast delivery and a large selection of products. On the other hand, concerns about packaging waste and marketplace product quality remain.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "neutral_mixed",
     "expected_context": [
       "Amazon offers fast delivery and a large selection of products.",
       "On the other hand, concerns about packaging waste and marketplace product quality remain."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Amazon offers fast delivery.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Amazon has a large product selection.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Amazon's packaging creates waste concerns.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Amazon's marketplace has product quality concerns.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 2,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.5
   },
   {
-    "id": 20,
+    "id": 35,
     "category": "mixed",
     "company": "Google",
     "answer": "Google provides convenient services and useful productivity tools. At the same time, its data collection practices raise privacy concerns.",
     "expected_mentioned": true,
-    "expected_sentiment": "neutral",
+    "expected_sentiment": "neutral_mixed",
     "expected_context": [
       "Google provides convenient services and useful productivity tools.",
       "At the same time, its data collection practices raise privacy concerns."
-    ]
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Google provides convenient services.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Google offers useful productivity tools.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Google's data collection practices raise privacy concerns.",
+        "polarity": "negative",
+        "intensity": 2
+      }
+    ],
+    "expected_positive_intensity_total": 2,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.5
   },
   {
-    "id": 21,
+    "id": 36,
+    "category": "mixed",
+    "company": "Samsung",
+    "answer": "Samsung's latest displays are bright and vivid. However, some users find its software interface cluttered and its update schedules inconsistent.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Samsung's latest displays are bright and vivid.",
+      "However, some users find its software interface cluttered and its update schedules inconsistent."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Samsung displays are bright and vivid.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some users find Samsung's software interface cluttered.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Samsung's update schedules can be inconsistent.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 1,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.3333
+  },
+  {
+    "id": 37,
+    "category": "mixed",
+    "company": "Netflix",
+    "answer": "Netflix invests in a wide range of original productions. However, subscription costs have risen, and some popular titles leave the catalogue.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Netflix invests in a wide range of original productions.",
+      "However, subscription costs have risen, and some popular titles leave the catalogue."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Netflix invests in a wide range of original productions.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Netflix subscription costs have risen.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Popular titles leave Netflix's catalogue.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 1,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.3333
+  },
+  {
+    "id": 38,
+    "category": "mixed",
+    "company": "Adobe",
+    "answer": "Adobe's creative applications provide powerful professional features. However, the subscription costs can be difficult for students and independent creators to justify.",
+    "expected_mentioned": true,
+    "expected_sentiment": "positive",
+    "expected_context": [
+      "Adobe's creative applications provide powerful professional features.",
+      "However, the subscription costs can be difficult for students and independent creators to justify."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Adobe applications provide powerful professional features.",
+        "polarity": "positive",
+        "intensity": 2
+      },
+      {
+        "opinion": "Adobe subscription costs can be difficult for students and independent creators to justify.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 2,
+    "expected_negative_intensity_total": 1,
+    "expected_normalized_score": 0.6667
+  },
+  {
+    "id": 39,
+    "category": "mixed",
+    "company": "Toyota",
+    "answer": "Toyota vehicles are generally dependable and retain their resale value. However, some models feel less engaging to drive and have conservative interior designs.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral_mixed",
+    "expected_context": [
+      "Toyota vehicles are generally dependable and retain their resale value.",
+      "However, some models feel less engaging to drive and have conservative interior designs."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Toyota vehicles are dependable.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Toyota vehicles retain resale value.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some Toyota models are less engaging to drive.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some Toyota models have conservative interior designs.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 2,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.5
+  },
+  {
+    "id": 40,
+    "category": "mixed",
+    "company": "Spotify",
+    "answer": "Spotify makes it easy to discover new music through personalized playlists. However, the free experience contains frequent ads, and some listeners want higher audio quality.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Spotify makes it easy to discover new music through personalized playlists.",
+      "However, the free experience contains frequent ads, and some listeners want higher audio quality."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Spotify makes music discovery easy through personalized playlists.",
+        "polarity": "positive",
+        "intensity": 1
+      },
+      {
+        "opinion": "Spotify's free experience contains frequent advertisements.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Some listeners find Spotify's audio quality insufficient.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ],
+    "expected_positive_intensity_total": 1,
+    "expected_negative_intensity_total": 2,
+    "expected_normalized_score": 0.3333
+  },
+  {
+    "id": 41,
     "category": "neutral_factual",
     "company": "Apple",
     "answer": "Apple was founded in 1976. The company is headquartered in Cupertino, California, and develops consumer electronics and software.",
@@ -249,10 +1084,11 @@
     "expected_context": [
       "Apple was founded in 1976.",
       "The company is headquartered in Cupertino, California, and develops consumer electronics and software."
-    ]
+    ],
+    "expected_opinions": []
   },
   {
-    "id": 22,
+    "id": 42,
     "category": "neutral_factual",
     "company": "Tesla",
     "answer": "Tesla manufactures electric vehicles and energy storage products. The company operates manufacturing facilities in multiple countries.",
@@ -261,10 +1097,11 @@
     "expected_context": [
       "Tesla manufactures electric vehicles and energy storage products.",
       "The company operates manufacturing facilities in multiple countries."
-    ]
+    ],
+    "expected_opinions": []
   },
   {
-    "id": 23,
+    "id": 43,
     "category": "neutral_factual",
     "company": "Microsoft",
     "answer": "Microsoft develops operating systems, productivity software, and cloud services. Its product portfolio includes Windows, Microsoft 365, and Azure.",
@@ -273,10 +1110,11 @@
     "expected_context": [
       "Microsoft develops operating systems, productivity software, and cloud services.",
       "Its product portfolio includes Windows, Microsoft 365, and Azure."
-    ]
+    ],
+    "expected_opinions": []
   },
   {
-    "id": 24,
+    "id": 44,
     "category": "neutral_factual",
     "company": "Amazon",
     "answer": "Amazon operates an e-commerce platform and provides cloud computing services through Amazon Web Services. It also has a subscription service called Prime.",
@@ -285,10 +1123,11 @@
     "expected_context": [
       "Amazon operates an e-commerce platform and provides cloud computing services through Amazon Web Services.",
       "It also has a subscription service called Prime."
-    ]
+    ],
+    "expected_opinions": []
   },
   {
-    "id": 25,
+    "id": 45,
     "category": "neutral_factual",
     "company": "Google",
     "answer": "Google develops internet-related products and services. Its offerings include Search, YouTube, Android, and Google Cloud.",
@@ -297,51 +1136,172 @@
     "expected_context": [
       "Google develops internet-related products and services.",
       "Its offerings include Search, YouTube, Android, and Google Cloud."
-    ]
+    ],
+    "expected_opinions": []
   },
   {
-    "id": 26,
+    "id": 46,
+    "category": "neutral_factual",
+    "company": "Samsung",
+    "answer": "Samsung is a South Korean company. Its business activities include consumer electronics, mobile devices, and semiconductor products.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Samsung is a South Korean company.",
+      "Its business activities include consumer electronics, mobile devices, and semiconductor products."
+    ],
+    "expected_opinions": []
+  },
+  {
+    "id": 47,
+    "category": "neutral_factual",
+    "company": "Netflix",
+    "answer": "Netflix is a subscription-based streaming service. Its catalogue includes films, television series, documentaries, and other video content.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Netflix is a subscription-based streaming service.",
+      "Its catalogue includes films, television series, documentaries, and other video content."
+    ],
+    "expected_opinions": []
+  },
+  {
+    "id": 48,
+    "category": "neutral_factual",
+    "company": "Adobe",
+    "answer": "Adobe is a software company headquartered in San Jose, California. Its products include Photoshop, Illustrator, Acrobat, and Creative Cloud.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Adobe is a software company headquartered in San Jose, California.",
+      "Its products include Photoshop, Illustrator, Acrobat, and Creative Cloud."
+    ],
+    "expected_opinions": []
+  },
+  {
+    "id": 49,
+    "category": "neutral_factual",
+    "company": "Toyota",
+    "answer": "Toyota is an automobile manufacturer headquartered in Japan. The company produces passenger cars, commercial vehicles, and hybrid vehicles.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Toyota is an automobile manufacturer headquartered in Japan.",
+      "The company produces passenger cars, commercial vehicles, and hybrid vehicles."
+    ],
+    "expected_opinions": []
+  },
+  {
+    "id": 50,
+    "category": "neutral_factual",
+    "company": "Spotify",
+    "answer": "Spotify is an audio streaming platform. Its service provides access to music, podcasts, and other audio content.",
+    "expected_mentioned": true,
+    "expected_sentiment": "neutral",
+    "expected_context": [
+      "Spotify is an audio streaming platform.",
+      "Its service provides access to music, podcasts, and other audio content."
+    ],
+    "expected_opinions": []
+  },
+  {
+    "id": 51,
     "category": "not_mentioned",
     "company": "Apple",
     "answer": "The smartphone market includes several manufacturers offering devices across different price segments. Consumers often compare camera quality, battery life, and performance before purchasing.",
     "expected_mentioned": false,
     "expected_sentiment": "not_applicable",
-    "expected_context": []
+    "expected_context": [],
+    "expected_opinions": []
   },
   {
-    "id": 27,
+    "id": 52,
     "category": "not_mentioned",
     "company": "Tesla",
     "answer": "Electric vehicles use rechargeable batteries and electric motors. Their driving range depends on battery capacity, vehicle efficiency, and driving conditions.",
     "expected_mentioned": false,
     "expected_sentiment": "not_applicable",
-    "expected_context": []
+    "expected_context": [],
+    "expected_opinions": []
   },
   {
-    "id": 28,
+    "id": 53,
     "category": "not_mentioned",
     "company": "Microsoft",
     "answer": "Cloud computing allows organizations to access computing resources over the internet. Common service models include infrastructure, platform, and software as a service.",
     "expected_mentioned": false,
     "expected_sentiment": "not_applicable",
-    "expected_context": []
+    "expected_context": [],
+    "expected_opinions": []
   },
   {
-    "id": 29,
+    "id": 54,
     "category": "not_mentioned",
     "company": "Amazon",
     "answer": "Online shopping platforms allow customers to browse products, compare prices, and place orders digitally. Delivery services then transport purchased products to customers.",
     "expected_mentioned": false,
     "expected_sentiment": "not_applicable",
-    "expected_context": []
+    "expected_context": [],
+    "expected_opinions": []
   },
   {
-    "id": 30,
+    "id": 55,
     "category": "not_mentioned",
     "company": "Google",
     "answer": "Search engines help users find information by indexing webpages and ranking results according to relevance. Their performance depends on crawling, indexing, and retrieval systems.",
     "expected_mentioned": false,
     "expected_sentiment": "not_applicable",
-    "expected_context": []
+    "expected_context": [],
+    "expected_opinions": []
+  },
+  {
+    "id": 56,
+    "category": "not_mentioned",
+    "company": "Samsung",
+    "answer": "Modern televisions use display technologies such as OLED, QLED, and LCD. Buyers often compare screen size, brightness, refresh rate, and price.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": [],
+    "expected_opinions": []
+  },
+  {
+    "id": 57,
+    "category": "not_mentioned",
+    "company": "Netflix",
+    "answer": "Streaming services deliver video content over the internet. Their performance depends on network bandwidth, video compression, and content delivery infrastructure.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": [],
+    "expected_opinions": []
+  },
+  {
+    "id": 58,
+    "category": "not_mentioned",
+    "company": "Adobe",
+    "answer": "Graphic design applications support image editing, vector illustration, and page layout. Many tools provide layers, masks, typography controls, and export options.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": [],
+    "expected_opinions": []
+  },
+  {
+    "id": 59,
+    "category": "not_mentioned",
+    "company": "Toyota",
+    "answer": "Vehicle manufacturers use different powertrain technologies, including petrol engines, hybrid systems, and battery-electric drivetrains. Each technology has different operating characteristics.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": [],
+    "expected_opinions": []
+  },
+  {
+    "id": 60,
+    "category": "not_mentioned",
+    "company": "Spotify",
+    "answer": "Audio streaming platforms use recommendation systems to suggest tracks. These systems may consider listening history, user preferences, and similarities between songs.",
+    "expected_mentioned": false,
+    "expected_sentiment": "not_applicable",
+    "expected_context": [],
+    "expected_opinions": []
   }
 ]

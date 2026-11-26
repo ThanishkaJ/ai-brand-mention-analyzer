@@ -6,20 +6,13 @@ from google.genai import types, errors
 
 from app.config import GEMINI_API_KEY, GEMINI_MODEL
 from app.llm.prompt import SYSTEM_PROMPT, build_analysis_prompt
-from app.schemas.analysis import AnalysisResult
+from app.schemas.analysis import GeminiAnalysisResult
 
 
-# Create the Gemini client
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-
-# Temporary HTTP errors for which retrying is appropriate
 RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
-
-# Maximum number of API attempts
 MAX_ATTEMPTS = 3
-
-# Waiting time before the second and third attempts
 RETRY_DELAYS = [2, 5]
 
 
@@ -27,7 +20,7 @@ def analyze_brand(
     company: str,
     answer: str,
     model: str | None = None
-) -> AnalysisResult:
+) -> GeminiAnalysisResult:
 
     selected_model = model or GEMINI_MODEL
 
@@ -49,27 +42,21 @@ def analyze_brand(
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_PROMPT,
                     response_mime_type="application/json",
-                    response_schema=AnalysisResult,
+                    response_schema=GeminiAnalysisResult,
                     temperature=0.1
                 )
             )
 
             if not response.text:
-                raise ValueError(
-                    "Gemini returned an empty response."
-                )
+                raise ValueError("Gemini returned an empty response.")
 
-            result = AnalysisResult.model_validate_json(
+            result = GeminiAnalysisResult.model_validate_json(
                 response.text
             )
 
-            if (
-                result.company.strip().casefold()
-                != company.strip().casefold()
-            ):
+            if result.company.strip().casefold() != company.strip().casefold():
                 raise ValueError(
-                    "The returned company does not match "
-                    "the requested company."
+                    "The returned company does not match the requested company."
                 )
 
             return result
@@ -78,17 +65,15 @@ def analyze_brand(
 
             status_code = getattr(error, "code", None)
 
-            # Do not retry permanent API errors
             if status_code not in RETRYABLE_STATUS_CODES:
                 raise RuntimeError(
                     f"Gemini API error ({status_code}): {error}"
                 ) from error
 
-            # Stop if all attempts have been exhausted
             if attempt == MAX_ATTEMPTS - 1:
                 raise RuntimeError(
-                    f"Gemini API failed after {MAX_ATTEMPTS} "
-                    f"attempts. Last error: {error}"
+                    f"Gemini API failed after {MAX_ATTEMPTS} attempts. "
+                    f"Last error: {error}"
                 ) from error
 
             delay = RETRY_DELAYS[attempt]
