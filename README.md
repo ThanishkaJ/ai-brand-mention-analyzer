@@ -296,9 +296,7 @@ A separate model smoke test can be used to check the live Gemini integration.
 
 ## Author
 
-**Thanishka**
-
-B.Tech – Artificial Intelligence and Data Science
+**Jonnala Thanishka**
 
 GitHub: https://github.com/ThanishkaJ
 
