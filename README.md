@@ -111,7 +111,7 @@ The system also handles irrelevant mentions separately. For example, mentioning 
 
 ## 6. Project Structure
 
-The backend follows a modular organization that separates API routes, database operations, and business logic.
+The project follows a modular architecture that separates the frontend, backend API, AI integration, database operations, and testing components.
 
 ```text
 ai-brand-mention-analyzer/
@@ -121,25 +121,64 @@ ai-brand-mention-analyzer/
 │   │   └── routes/
 │   │       └── analysis.py
 │   │
-│   ├── services/
-│   │   └── database_service.py
-│   │
 │   ├── database/
 │   │   ├── connection.py
 │   │   └── models.py
 │   │
+│   ├── llm/
+│   │   ├── gemini_client.py
+│   │   └── prompt.py
+│   │
+│   ├── schemas/
+│   │   └── analysis.py
+│   │
+│   ├── services/
+│   │   ├── analysis_service.py
+│   │   └── database_service.py
+│   │
+│   ├── config.py
 │   └── main.py
 │
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
+├── tests/
+│   ├── manual/
+│   │   ├── brand_analysis_demo.py
+│   │   ├── gemini_connection_check.py
+│   │   └── model_smoke_check.py
+│   │
+│   ├── evaluation_cases.json
+│   ├── smoke_test_results.json
+│   ├── test_database.py
+│   ├── test_evaluation_dataset.py
+│   ├── test_prompt.py
+│   └── test_sentiment_logic.py
+│
 ├── init_db.py
-├── requirements.txt
-├── .env
+├── check_evaluation_dataset.py
+├── recalculate_expected_sentiments.py
+├── update_evaluation_dataset.py
+│
+├── .env.example
 ├── .gitignore
+├── requirements.txt
+├── AGENT_USAGE.md
 └── README.md
 ```
 
-*Note: This is a simplified representation of the main application components. Additional frontend and backend files are maintained in the repository.*
+### Main Components
 
-## 7. Local Installation and Setup
+- **app/api:** Defines backend API routes.
+- **app/llm:** Handles Gemini API integration and analysis prompts.
+- **app/services:** Contains application and database business logic.
+- **app/database:** Defines database connectivity and SQLAlchemy models.
+- **app/schemas:** Defines data validation and request/response structures.
+- **frontend:** Contains the HTML, CSS, and JavaScript user interface.
+- **tests:** Contains automated tests, evaluation cases, and manual testing utilities.
+- **init_db.py:** Initializes the database tables.nd Setup
 
 ### Prerequisites
 

@@ -1,6 +1,6 @@
 # Coding Agent Usage Documentation
 
-This document describes how AI tools were used during the development of the AI-Powered Brand Mention & Sentiment Analyzer, including the work they assisted with, the verification performed, and the changes made manually.
+This document describes how AI tools were used during the development of the AI-Powered Brand Mention & Sentiment Analyzer, including their contributions, verification activities, and implementation changes.
 
 ## 1. Agents Used
 
@@ -24,11 +24,11 @@ Claude was used primarily to understand the implementation and review technical 
 Its responsibilities included:
 - Explaining generated code and its execution flow.
 - Clarifying the application architecture.
-- Explaining the interaction between the frontend, FastAPI backend, Gemini API, and database.
+- Explaining interactions between the frontend, FastAPI backend, Gemini API, and database.
 - Helping understand implementation decisions and technical trade-offs.
 - Supporting the understanding of errors and debugging approaches.
 
-The two tools served different purposes: ChatGPT primarily assisted with generation, while Claude primarily assisted with understanding.
+The two tools served different purposes: ChatGPT primarily assisted with code generation, while Claude primarily assisted with code understanding and technical explanations.
 
 ## 2. What They Generated
 
@@ -48,35 +48,68 @@ AI-generated code was treated as development assistance rather than automaticall
 
 ## 3. What Was Verified
 
-The application was tested and reviewed during development to check whether its major components worked as expected.
+The application was tested and reviewed to check whether its major components worked as expected.
 
-Verification activities included:
+### Automated Testing
+
+The repository contains the following four test files:
+
+- `tests/test_database.py`
+- `tests/test_evaluation_dataset.py`
+- `tests/test_prompt.py`
+- `tests/test_sentiment_logic.py`
+
+The complete test suite was executed using:
+
+```bash
+python -m pytest -v
+```
+
+**Recorded test result: 75 passed in 2.73 seconds.**
+
+The tests covered:
+- Database analysis persistence.
+- 61 evaluation dataset cases covering different brand mention and sentiment scenarios.
+- Prompt loading and construction.
+- Sentiment calculation, including mixed sentiment and threshold boundary cases.
+
+These tests verify the implemented logic against the expected test cases. Passing the evaluation dataset tests does not independently establish the accuracy of live Gemini API predictions.
+
+### Gemini SDK Verification
+
+The Google GenAI SDK import was independently checked using:
+
+```bash
+python -c "from google import genai; print('SUCCESS: Google GenAI SDK imported successfully')"
+```
+
+The import completed successfully.
 
 ### Backend and API Behaviour
+
 - Checked whether the FastAPI application started successfully.
 - Verified communication between the frontend and the `/api/analyze` endpoint.
 - Checked whether analysis requests reached the backend and produced responses.
-- Verified that the Gemini integration returned analysis results.
+- Verified Gemini-powered analysis through application testing.
 
 ### Brand Analysis Behaviour
+
 - Checked brand mention detection.
-- Examined whether irrelevant brand references were correctly distinguished from relevant mentions.
+- Examined whether irrelevant brand references were distinguished from relevant mentions.
 - Reviewed the generated sentiment and contextual information.
 - Checked the explanation returned for an analysis.
 
 ### Database Behaviour
+
 - Verified that analysis records could be saved.
 - Checked database initialization and the creation of required tables.
 - Verified that the analysis history functionality worked.
 
 ### Deployment
+
 - Verified that the application was accessible through its Render deployment.
 - Checked the deployed API and frontend behaviour.
 - Tested brand analysis after correcting the database initialization issue.
-
-The repository also contains test-related scripts, including `test_brand_analysis.py`, `test_gemini_connection.py`, `test_prompt.py`, and `check_evaluation_dataset.py`.
-
-The existence of these scripts should not be interpreted as evidence that every test or evaluation was successfully executed.
 
 ## 4. What Was Changed Manually
 
