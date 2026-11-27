@@ -12,11 +12,15 @@ venv/
 __pycache__/
 *.py[cod]
 
-# Testing
-.pytest_cache/
-
 # Database
 *.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
 # IDE
 .vscode/

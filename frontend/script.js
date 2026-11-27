@@ -1,5 +1,5 @@
 
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = "/api";
 
 // DOM elements
 const analysisForm = document.getElementById("analysisForm");
@@ -407,7 +407,7 @@ async function checkBackend() {
     const statusDot = document.querySelector(".status-dot");
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/health");
+        const response = await fetch("/health");
 
         if (!response.ok) {
             throw new Error("Backend unavailable");
