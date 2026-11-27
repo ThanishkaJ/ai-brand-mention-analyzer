@@ -1,8 +1,6 @@
-# AirMeet – AI-Powered Brand Mention & Sentiment Analyzer
+# AI-Powered Brand Mention & Sentiment Analyzer
 
-AirMeet is an AI-powered brand mention analysis platform that helps users understand how brands are represented in textual content. It uses Google's Gemini API to identify brand mentions, determine relevance, analyze sentiment, and extract contextual opinions.
-
-The application provides an interactive interface for analyzing brand mentions and maintaining a history of previously performed analyses.
+An AI-powered platform that helps users understand how brands are represented in textual content. It uses Google's Gemini API to identify brand mentions, determine relevance, analyze sentiment, and extract contextual opinions.
 
 **Live Application:** https://ai-brand-mention-analyzer.onrender.com
 
@@ -12,9 +10,9 @@ The application provides an interactive interface for analyzing brand mentions a
 
 ## 1. Problem Statement
 
-Brands are frequently discussed across digital platforms, articles, reviews, and other forms of textual content. However, identifying whether a particular brand is mentioned, understanding the context of the mention, and determining the associated sentiment can be challenging when performed manually.
+Brands are frequently discussed across digital platforms, articles, reviews, and other forms of textual content. Identifying whether a particular brand is mentioned, understanding the context, and determining the associated sentiment can be challenging when performed manually.
 
-AirMeet addresses this problem through an AI-powered analysis system that processes textual content and extracts meaningful brand-related insights.
+This project addresses the problem through an AI-powered analysis system that processes textual content and extracts meaningful brand-related insights.
 
 ## 2. Key Features
 
@@ -27,7 +25,7 @@ AirMeet addresses this problem through an AI-powered analysis system that proces
 - **Opinion Extraction:** Identifies opinions expressed about the brand.
 - **Analysis Explanation:** Provides an explanation supporting the analysis result.
 - **Analysis History:** Saves previous analyses and allows users to review them.
-- **Interactive Dashboard:** Provides a user-friendly interface for submitting content and viewing results.
+- **Interactive Interface:** Provides a user-friendly interface for submitting content and viewing results.
 
 ## 3. Technology Stack
 
@@ -95,7 +93,7 @@ The application follows a frontend-backend architecture.
 
 ## 5. Analysis Output
 
-For each submitted analysis, AirMeet maintains information such as:
+For each submitted analysis, the application maintains information such as:
 
 | Field | Description |
 |---|---|
@@ -145,7 +143,7 @@ ai-brand-mention-analyzer/
 
 ### Prerequisites
 
-- Python 3.10 or later (use a version compatible with the pinned dependencies).
+- Python 3.10 or later (use a version compatible with the project dependencies).
 - Git.
 - Google Gemini API key.
 
@@ -197,8 +195,6 @@ Never commit API keys or other sensitive credentials to GitHub.
 
 ### Step 5: Initialize the database
 
-Run:
-
 ```bash
 python init_db.py
 ```
@@ -225,7 +221,7 @@ http://127.0.0.1:8000/docs
 
 ## 8. Database Management
 
-AirMeet uses SQLite for storing analysis results.
+The application uses SQLite for storing analysis results.
 
 SQLAlchemy acts as the Object Relational Mapper (ORM), allowing Python application code to interact with database tables through models rather than writing every SQL query manually.
 
@@ -241,7 +237,7 @@ The analysis history feature uses the stored records to retrieve previously perf
 
 ## 9. Deployment
 
-AirMeet is deployed using Render.
+The application is deployed using Render.
 
 **Live URL:** https://ai-brand-mention-analyzer.onrender.com
 
@@ -304,7 +300,7 @@ Potential improvements include:
 
 ## 12. Conclusion
 
-AirMeet demonstrates how Generative AI can be integrated into a web application to automate brand mention detection, contextual relevance analysis, and sentiment extraction.
+This project demonstrates how Generative AI can be integrated into a web application to automate brand mention detection, contextual relevance analysis, and sentiment extraction.
 
 By combining Google's Gemini API, FastAPI, SQLAlchemy, and SQLite, the application provides an integrated platform for analyzing brand-related textual content and reviewing previous analysis results.
 
@@ -312,5 +308,4 @@ The project is deployed and available as a web application.
 
 ---
 
-**Developed by:** Thanishka  
-**Project:** AI-Powered Brand Mention & Sentiment Analyzer
+**Developed by:** Thanishka
