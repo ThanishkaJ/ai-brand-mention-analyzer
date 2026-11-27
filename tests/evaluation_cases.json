@@ -745,6 +745,29 @@
     ]
   },
   {
+    "id": 61,
+    "category": "competitor_comparison",
+    "company": "Apple",
+    "answer": "Samsung offers better battery life and more affordable pricing than Apple.",
+    "expected_mentioned": true,
+    "expected_sentiment": "negative",
+    "expected_context": [
+      "Samsung offers better battery life and more affordable pricing than Apple."
+    ],
+    "expected_opinions": [
+      {
+        "opinion": "Apple offers weaker battery life than Samsung.",
+        "polarity": "negative",
+        "intensity": 1
+      },
+      {
+        "opinion": "Apple is less affordable than Samsung.",
+        "polarity": "negative",
+        "intensity": 1
+      }
+    ]
+  },
+  {
     "id": 31,
     "category": "mixed",
     "company": "Apple",
